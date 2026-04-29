@@ -20,21 +20,10 @@
 #include "Log.h"
 #include "Memory.h"
 #include "Optional.h"
-#ifndef BOOST_ALLOW_DEPRECATED_HEADERS
-#define BOOST_ALLOW_DEPRECATED_HEADERS
-#include <boost/process/args.hpp>
-#include <boost/process/child.hpp>
-#include <boost/process/env.hpp>
-#include <boost/process/error.hpp>
-#include <boost/process/exe.hpp>
-#include <boost/process/io.hpp>
-#include <boost/process/pipe.hpp>
-#include <boost/process/search_path.hpp>
-#undef BOOST_ALLOW_DEPRECATED_HEADERS
-#endif
+#include <boost/process/v1.hpp>
 #include <fmt/ranges.h>
 
-namespace bp = boost::process;
+namespace bp = boost::process::v1;
 
 namespace Trinity
 {
